@@ -1,13 +1,5 @@
 import { useEffect, useState } from "react";
-
-const lines = [
-  { text: "$ northbridge deploy webapp", cls: "text-gold" },
-  { text: "  installing dependencies ......... done", cls: "text-gold" },
-  { text: "  building frontend ............... done", cls: "text-gold" },
-  { text: "  provisioning AWS EC2 ............ done", cls: "text-gold" },
-  { text: "  configuring nginx + ssl ......... done", cls: "text-gold" },
-  { text: "  live → yourapp.com", cls: "text-gold" },
-];
+import { heroLines as lines, heroStats } from "./heroData";
 
 export default function Hero() {
   const prefersReducedMotion =
@@ -92,22 +84,17 @@ export default function Hero() {
             </a>
           </div>
           <div className="flex gap-[36px] mt-[52px] flex-wrap">
-            <div className="border-l border-[var(--line-strong)] pl-[14px]">
-              <span className="font-serif text-[1.5rem] block">5</span>
-              <span className="text-slate text-[0.85rem]">
-                services, one team
-              </span>
-            </div>
-            <div className="border-l border-[var(--line-strong)] pl-[14px]">
-              <span className="font-serif text-[1.5rem] block">1</span>
-              <span className="text-slate text-[0.85rem]">
-                point of contact
-              </span>
-            </div>
-            <div className="border-l border-[var(--line-strong)] pl-[14px]">
-              <span className="font-serif text-[1.5rem] block">0</span>
-              <span className="text-slate text-[0.85rem]">vendor lock-in</span>
-            </div>
+            {heroStats.map((stat, i) => (
+              <div
+                key={i}
+                className="border-l border-[var(--line-strong)] pl-[14px]"
+              >
+                <span className="font-serif text-[1.5rem] block">
+                  {stat.value}
+                </span>
+                <span className="text-slate text-[0.85rem]">{stat.label}</span>
+              </div>
+            ))}
           </div>
         </div>
 

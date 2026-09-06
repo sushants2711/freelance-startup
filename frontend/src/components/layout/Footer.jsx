@@ -1,3 +1,5 @@
+import { footerLinks } from "./footerData";
+
 export default function Footer() {
   return (
     <footer className="bg-paper text-slate-lt border-t border-[var(--line-lt)] py-[64px] text-[0.85rem]">
@@ -17,24 +19,15 @@ export default function Footer() {
 
         <div className="flex flex-col md:items-center gap-[12px]">
           <span className="text-ink font-semibold mb-[4px]">Legal</span>
-          <a
-            href="#"
-            className="no-underline text-slate-lt hover:text-gold-dark transition-colors"
-          >
-            Terms &amp; Conditions
-          </a>
-          <a
-            href="#"
-            className="no-underline text-slate-lt hover:text-gold-dark transition-colors"
-          >
-            Privacy Policy
-          </a>
-          <a
-            href="#"
-            className="no-underline text-slate-lt hover:text-gold-dark transition-colors"
-          >
-            Cookie Policy
-          </a>
+          {footerLinks.map((link, idx) => (
+            <a
+              key={idx}
+              href={link.href}
+              className="no-underline text-slate-lt hover:text-gold-dark transition-colors"
+            >
+              {link.text}
+            </a>
+          ))}
         </div>
 
         <div className="flex flex-col md:items-end gap-[12px]">

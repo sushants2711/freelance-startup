@@ -1,16 +1,16 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Services from "./components/Services";
-import Process from "./components/Process";
-import Work from "./components/Work";
-import Stack from "./components/Stack";
-import Insights from "./components/Insights";
-import Pricing from "./components/Pricing";
-import FAQ from "./components/FAQ";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import StickyCta from "./components/StickyCta";
+import Header from "./components/layout/Header";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Services from "./components/Services/Services";
+import Process from "./components/Process/Process";
+import Work from "./components/Work/Work";
+import Stack from "./components/Stack/Stack";
+import Insights from "./components/Insights/Insights";
+import Pricing from "./components/Pricing/Pricing";
+import FAQ from "./components/FAQ/FAQ";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/layout/Footer";
+import StickyCta from "./components/layout/StickyCta";
 
 function App() {
   return (
