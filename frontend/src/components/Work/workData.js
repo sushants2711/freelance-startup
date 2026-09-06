@@ -1,22 +1,27 @@
 export const workData = [
   {
-    category: "website",
+    category: "website & infrastructure",
     title: "Brightrace Digital",
+    link: "https://brightracedigital.co.in",
     description:
-      "Comprehensive website maintenance and a complete structural redesign to enhance user experience, performance, and operational scalability.",
+      "Main website redesign, complete UI/UX overhaul, AWS infrastructure maintenance, backend logic enhancement, and server log management.",
     details: [
-      { label: "stack", value: "React, Node.js" },
-      { label: "scope", value: "Full Redesign & Maintenance" },
+      { label: "stack", value: "React, Node.js, AWS" },
+      { label: "scope", value: "Redesign, Backend & DevOps" },
+      {
+        label: "features",
+        value: "SEO Optimization, Headless CMS, Advanced Analytics",
+      },
     ],
   },
   {
-    category: "app & platform",
-    title: "Employee Management System",
+    category: "internal platform",
+    title: "Employee Management System (EMS)",
     description:
-      "A cross-platform web and mobile application currently under active development. Core features include robust attendance tracking, modern UI enhancements, and seamless employee operations management.",
+      "An internal system built for Brightrace Digital. Features include real-time attendance tracking, project assignment management (who is working on what), and a comprehensive client management portal.",
     details: [
       { label: "stack", value: "React Native, PostgreSQL, Node.js" },
-      { label: "features", value: "Attendance Tracking, UI Overhaul" },
+      { label: "features", value: "Attendance, Project Tracking, Client CRM" },
       { label: "status", value: "In Active Development" },
     ],
   },

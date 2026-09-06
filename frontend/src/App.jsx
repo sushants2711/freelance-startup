@@ -1,5 +1,6 @@
 import Header from "./components/layout/Header";
 import Hero from "./components/Hero/Hero";
+import TrustedBy from "./components/TrustedBy/TrustedBy";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import Process from "./components/Process/Process";
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <main id="top">
         <Hero />
+        <TrustedBy />
         <About />
         <Services />
         <Process />

@@ -48,6 +48,16 @@ export const contactFormFields = [
     layout: "half",
   },
   {
+    id: "mobile",
+    name: "mobile",
+    label: "Mobile Number",
+    type: "tel",
+    placeholder: "+91 xxxxx xxxxx",
+    required: true,
+    componentType: "input",
+    layout: "full",
+  },
+  {
     id: "service",
     name: "service",
     label: "What do you need?",

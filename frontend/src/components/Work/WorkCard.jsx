@@ -6,7 +6,32 @@ export default function WorkCard({ project }) {
           {project.category}
         </p>
         <h3 className="text-[1.3rem] mb-[12px] font-semibold">
-          {project.title}
+          {project.link ? (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-paper hover:text-gold transition-colors inline-flex items-center gap-[8px] no-underline"
+            >
+              {project.title}
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          ) : (
+            project.title
+          )}
         </h3>
         <p className="text-slate m-0 max-w-[44ch]">{project.description}</p>
       </div>
