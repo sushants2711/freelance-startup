@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import Process from "./components/Process";
 import Work from "./components/Work";
 import Stack from "./components/Stack";
+import Insights from "./components/Insights";
 import Pricing from "./components/Pricing";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
@@ -22,6 +23,7 @@ function App() {
         <Process />
         <Work />
         <Stack />
+        <Insights />
         <Pricing />
         <FAQ />
         <Contact />
